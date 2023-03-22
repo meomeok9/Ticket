@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
-const ticketSchema = new Schema(
+const resultSchema = new Schema(
   {
     firstPrize: [{ type: String, require: true }],
     secondPrize: [{ type: String, require: true }],
@@ -15,4 +15,4 @@ const ticketSchema = new Schema(
   },
   { timestamps: true }
 );
-module.exports = mongoose.model("Titkets", ticketSchema);
+module.exports = mongoose.model("Results", resultSchema);
